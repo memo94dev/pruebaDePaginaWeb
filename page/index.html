@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../images/mdev.ico"/> 
+    <link rel="stylesheet" href="../styles/stylesindex.css">
+    <script src="../functions/validationuser.js"></script>
+    <script src="../functions/modal.js"></script>
+    <title>Memo Dev - Ingreso a mi página</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ingresar a la página</h1><br>
+        <form>
+            <div class="contPrin">
+                <label for="username">Ingrese su usuario: </label>
+                <input type="text" id="username" placeholder="Juan123" size="35" required>
+            </div> <br><br>
+            <div class="contPrin">
+                <label for="mail">Ingrese su email: </label>
+                <input type="email" id="mail" placeholder="ejemplo@mail.com" size="35" required>
+            </div> <br><br>
+            <div class="contPrin">
+                <label for="pass">Ingrese su contraseña: </label>
+                <input type="password" id="pass" placeholder="********" size="35" required>
+            </div> <br><br>
+            <div class="contPrin">
+                <button type="button" onclick="captform1()" class="mybutton">Ingresar</button>
+            </div><br><br>
+        </form>    
+        <p>Aún no tengo una <a href="formlog.html">cuenta</a></p><br>
+        <footer>
+            <p id="foot">Asunción - Paraguay</p>
+        </footer>
+        <button class="mybutton" id="abrir-modal" onclick="prueba()">Aviso!</button>
+        <dialog id="modal">
+            <h2>Utilizamos Cookies!</h2>
+            <p>Si quieres saber más presiona sobre este <a href="#">enlace</a></p>
+            <button class="mybutton" id="cerrar-modal">Cerrar</button>
+        </dialog>
+    </div>
+    <div></div>
+</body>
+</html>

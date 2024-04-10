@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="../images/mdev.ico"/>
+    <title>Memo Dev - Crear cuenta</title>
+    <link rel="stylesheet" href="../styles/stylesindex.css">
+    <script src="../functions/createuser.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Llena el formulario para crear una cuenta: </h1>
+        <form action="">
+            <p id="title">Nombre:</p>
+            <div class="contPrin">
+                <label for="name"></label>
+                    <input type="text" name="" id="name" placeholder="Arnaldo André" required>
+            </div>
+            <p id="title">Correo:</p>
+            <div class="contPrin">
+                <label for="mail"></label>
+                    <input type="email" name="" id="mail" placeholder="ejemplo@webmail.com" required>
+            </div>
+            <p id="title">Edad:</p>
+            <div class="contPrin">
+                <label for="age"></label>
+                    <input type="number" name="" id="age" placeholder="18" required min="18" max="79">
+            </div>
+            <p id="title">Contraseña:</p>
+            <div class="contPrin">
+                <label for="pass"></label>
+                    <input type="password" name="" id="pass" placeholder="********" required>
+            </div>
+            <p id="title">Confirmar Contraseña:</p>
+            <div class="contPrin">
+                <label for="passconfir"></label>
+                    <input type="password" name="" id="passconfir" placeholder="********" required>
+            </div><br>
+                <button type="button" onclick="createUser()" class="mybutton">Crear Usuario</button>
+        </form>
+        <p>Volver a la página <a href="index.html">principal</a></p>
+    </div>
+</body>
+</html>
